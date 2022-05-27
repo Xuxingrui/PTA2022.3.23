@@ -1,0 +1,33 @@
+friend bool operator>(String& string1, String& string2);
+friend bool operator<(String& string1, String& string2);
+friend bool operator=(String& string1, String& string2);
+
+bool operator>(String& string1, String& string2)
+{
+	if (strcmp(string1.p, string2.p) > 0)
+		return true;
+	else
+		return false;
+}
+bool operator<(String& string1, String& string2)
+{
+	if (strcmp(string1.p, string2.p) < 0)
+		return true;
+	else
+		return false;
+}
+bool operator=(String& string1, String& string2)
+{
+	if (strcmp(string1.p, string2.p) = 0)
+		return true;
+	else
+		return false;
+}
+int main()
+{
+	String string1("Hello"), string2("Book"), string3("Computer");
+	cout << (string1 > string2) << endl;
+	cout << (string1 < string2) << endl;
+	cout << (string1 = string2) << endl;
+	return 0;
+}
