@@ -1,0 +1,35 @@
+struct Student
+{
+	int num;
+	char name[20];
+	char sex;
+};
+
+class Student
+{
+	int num;
+	char name[20];
+	char sex;
+	void display;
+	{
+		cout << "num:" << num << endl;
+		cout << "name:" << name << endl;
+		cout << "sex:" << sex << endl;
+	}
+};
+Student stud1, stud2;
+class Student
+{
+private:
+	int num;
+	char name;
+	char sex;
+public:
+	void display()
+	{
+		cout << "num:" << num << endl;
+		cout << "name:" << name << endl;
+		cout << "sex:" << sex << endl;
+	}
+};
+Student stud1, stud2;
