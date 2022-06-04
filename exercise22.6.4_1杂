@@ -1,0 +1,75 @@
+class Student
+{
+public:
+	void display()
+	{
+		cout << "num:" << num << endl;
+		cout << "name:" << name << endl;
+		cout << "sex:" << sex << endl;
+	}
+private:
+	int num;
+	char name;
+	char sex;
+}; stud1, stud2;
+
+struct Student
+{
+private:
+	int num;
+	char name[20];
+	char sex;
+public:
+	void display()
+	{
+		cout << "num:" << num << endl;
+		cout << "name:" << name << endl;
+		cout << "sex:" << sex << endl;
+	}
+};
+Student stud1, stud2;
+
+class Student
+{
+public:
+	void display();
+private:
+	int num;
+	char name;
+	char sex;
+
+};
+void Student::display()
+{
+	cout << "num:" << num << endl;
+	cout << "name:" << name << endl;
+	cout << "sex:" << sex << endl;
+}
+Student stud1, stud2;
+
+class Student
+{
+public:
+	inline void display()
+	{
+		cout << "num:" << num << endl;
+		cout << "name:" << name << endl;
+		cout << "sex:" << sex << endl;
+	}
+private:
+	int num;
+	char name;
+	char sex;
+};
+class Time
+{
+public:
+	int hour;
+	int minute;
+	int sec;
+	void set();
+	{
+		cin >> a >> b >> c;
+		cout << sizeof(Time) << endl;
+	}
+};
