@@ -1,0 +1,17 @@
+stud1.num = 1001;
+stud1.display();
+class Time
+{
+public:
+	int hour;
+	int minute;
+
+};
+Time t, * p;
+p = &t;
+cout << p ->hour ;
+(*p).hour;
+t.hour;
+Time t1;
+Time& t2 = t1;
+cout << t2.hour;
